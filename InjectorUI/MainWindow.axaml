@@ -8,6 +8,7 @@
         ExtendClientAreaToDecorationsHint="True">
 	<Panel>
 		<Grid>
+			<!-- I prefer to put the definitions of the grid here. It just looks better in my opinion. -->
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="15" />
 				<ColumnDefinition Width="*" />
