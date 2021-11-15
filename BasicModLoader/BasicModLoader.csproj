@@ -51,7 +51,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="LoaderEntry.cs" />
-		<Compile Include="LoadStaticConstructorOnLoad.cs" />
+		<Compile Include="RunStaticConstructorOnLoad.cs" />
 		<Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>
 	<ItemGroup>
