@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="450" Height="300"
+        x:Class="InjectorUI.MainWindow"
+        Title="InjectorUI"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="True">
+	<Panel>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="15" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="15" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="15" />
+				<RowDefinition Height="25" />
+				<RowDefinition Height="10" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="10" />
+				<RowDefinition Height="35" />
+				<RowDefinition Height="15" />
+			</Grid.RowDefinitions>
+
+			<TextBox Grid.Row="1" Grid.Column="1" Name="GamePath" />
+			<ScrollViewer Grid.Row="3" Grid.Column="1">
+				<TextBox IsReadOnly="True" Name="DataOutput" />
+			</ScrollViewer>
+			<Button Grid.Row="5" Grid.Column="1" Click="InjectModLoader" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Begin Injection</Button>
+		</Grid>
+	</Panel>
+</Window>
